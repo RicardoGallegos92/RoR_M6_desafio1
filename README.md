@@ -45,4 +45,4 @@ production:
 
 - Acceder vía navegador al localhost: `http://127.0.0.1:3000/`
 
-## [localhost](http://127.0.0.1:3000)
+<h2><a href="http://127.0.0.1:3000/" target="_blank">Localhost</a></h2>
