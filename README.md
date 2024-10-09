@@ -1,24 +1,48 @@
-# README
+# Proyecto Relación 1 a N
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Ruby version : 3.3.3
+* Base de Datos local : PostgreSQL
 
-Things you may want to cover:
+Debe agregarse archivo config/database.yml
+```
+default: &default
+  adapter: postgresql
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  timeout: 5000
 
-* Ruby version
+development:
+  <<: *default
+  database: {NOMBRE_BD_LOCAL}_rails
+  username:{USER_BD_LOCAL}
+  password: {PASSWORD_BD_LOCAL}
+  host: localhost
+  port: 5432
 
-* System dependencies
+test:
+  <<: *default
+  database: {NOMBRE_BD_LOCAL}_rails_test
+  username:{USER_BD_LOCAL}
+  password: {PASSWORD_BD_LOCAL}
+  host: localhost
 
-* Configuration
+production:
+  <<: *default
+  database: {NOMBRE_BD_LOCAL}_rails_production
+  username:{USER_BD_LOCAL}
+  password: <%= ENV["{NOMBRE_BD_LOCAL}_rails_DATABASE_PASSWORD"] %>
+```
+- crear BD local y hacer migracion de las tablas:
 
-* Database creation
+1 `rails db:create`
 
-* Database initialization
+2 `rails db:migrate`
 
-* How to run the test suite
+3 `rails db:seeds`
 
-* Services (job queues, cache servers, search engines, etc.)
+- poner en funcionamiento el servidor local:
 
-* Deployment instructions
+`rails s`
 
-* ...
+- Acceder vía navegador al localhost: `http://127.0.0.1:3000/`
+
+## [localhost](http://127.0.0.1:3000)
