@@ -10,13 +10,14 @@
           <th scope="col">Nombre</th>
           <th scope="col">Edad</th>
           <th scope="col">Pelicula Actual</th>
-          <th scope="col" colspan="2"></th>
+          <th scope="col" colspan="3"></th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <%= render @client %>
           <td><%= link_to "Editar cliente", edit_client_path(@client) %></td>
+          <td><%= link_to "Volver a la lista", clients_path %></td>
           <td><%= button_to "Borrar cliente", @client, method: :delete %></td>
         </tr>
       </tbody>

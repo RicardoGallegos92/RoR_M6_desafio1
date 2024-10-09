@@ -2,11 +2,9 @@
 
 <section id="newForm">
     <%= render "form", client: @client %>
+    <hr>
+    <div style="text-align: center">
+      <%= link_to "Mostrar cliente", @client, class: "btn btn-primary" %>
+      <%= link_to "Volver a la lista", clients_path, class: "btn btn-primary" %>
+    </div>
 </section>
-
-<br>
-
-<div style="text-align: center">
-  <%= link_to "Mostrar cliente", @client %> |
-  <%= link_to "Volver a lista clientes", clients_path %>
-</div>

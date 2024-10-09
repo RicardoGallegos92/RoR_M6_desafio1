@@ -2,8 +2,7 @@
 
 <div id="showMovie">
 <%= render @movie %>
-  <%= link_to "Editar pelicula", edit_movie_path(@movie), class: "btn btn-primary"  %>
-  <%= link_to "Lista Peliculas", movies_path, class: "btn btn-primary"  %>
-
-  <%= button_to "Borrar esta pelicula", @movie, method: :delete %>
+    <%= link_to "Editar pelicula", edit_movie_path(@movie), class: "btn btn-primary"  %>
+    <%= link_to "Lista Peliculas", movies_path, class: "btn btn-primary"  %>
+    <%= button_to "Borrar esta pelicula", @movie, method: :delete %>
 </div>

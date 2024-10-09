@@ -1,4 +1,4 @@
-/* #colores */
+/* #PaletaColores1 */
 :root{
   --MENU:#87C159;
   --MENU_HOVER:#058240;
@@ -7,8 +7,19 @@
   --CARD_BG:#FEE3A2;
   --BOTTON_BG:#ADCACB;
   --TEXT_COLOR:#000;
-
 }
+
+/* #PaletaColores2
+:root{
+  --MENU:#00457E;
+  --MENU_HOVER:#02315E;
+  --FORM_BG:#B9848C;
+  --BG_COLOR:#806491;
+  --CARD_BG:#FEE3A2;
+  --BOTTON_BG:#ADCACB;
+  --TEXT_COLOR:#000;
+}
+
 /* Menu */
 .navbar{
   position: sticky;
@@ -16,15 +27,26 @@
   z-index: 99;
 }
 
+.navbar *{
+  font-weight: bolder;
+}
+
+#navbarSupportedContent{
+
+}
+
 .navbar-light{
   background-color: var(--MENU) !important;
 }
 
-.navbar-nav{
-  text-align: end;
+ul.navbar-nav{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .navbar-brand{
+  margin: 8px;
   padding: 5px;
 }
 
@@ -35,8 +57,10 @@
   text-shadow: 0px 0px 5px white;
 }
 
-h1{
+h1,h2{
   text-align: center;
+  text-transform: capitalize;
+  text-wrap: stable;
 }
 
 .card{
@@ -87,7 +111,7 @@ th,td{
 
 table>*{
   background-color: rgba(0, 0, 0, 0.05);
-  border: 1px black solid;
+  border: 4px black double;
 }
 
 table a{
