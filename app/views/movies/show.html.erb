@@ -1,5 +1,7 @@
 <p style="color: green"><%= notice %></p>
 
+<h1>Mostrando Pelicula <%=@movie.id%> </h1>
+<hr>
 <div id="showMovie">
 <%= render @movie %>
     <%= link_to "Lista Peliculas", movies_path, class: "btn btn-primary"  %>

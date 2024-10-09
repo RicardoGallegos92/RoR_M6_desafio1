@@ -57,6 +57,8 @@ h1,h2{
   text-align: center;
   text-transform: capitalize;
   text-wrap: stable;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .card{
@@ -134,9 +136,6 @@ input[value="delete"]+button{
 }
 
 #footer{
-  text-align: center;
-  position: sticky;
-  padding: 5px;
-  right: 15px;
-  bottom: -55px;
+  text-align: end;
+  margin-right: 15px;
 }
