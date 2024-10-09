@@ -12,16 +12,16 @@
   <% end %>
 
   <div>
-    <%= form.label :name, style: "display: block" %>
+    <%= form.label "Nombre pelicula", style: "display: block" %>
     <%= form.text_field :name %>
-  </div>
-
-  <div>
-    <%= form.label :client_id, style: "display: block" %>
-    <%= form.select :client_id, options_for_select(@clients) %>
   </div>
   <hr>
   <div>
-    <%= form.submit %>
+    <%= form.label "Cliente", style: "display: block" %>
+    <%= form.select :client_id, options_for_select(@clients), :include_blank => true %>
+  </div>
+  <hr>
+  <div>
+    <%= form.submit "Guardar Pelicula" %>
   </div>
 <% end %>

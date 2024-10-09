@@ -1,10 +1,9 @@
 <p style="color: green"><%= notice %></p>
 
+<div id="showMovie">
 <%= render @movie %>
+  <%= link_to "Editar pelicula", edit_movie_path(@movie), class: "btn btn-primary"  %>
+  <%= link_to "Lista Peliculas", movies_path, class: "btn btn-primary"  %>
 
-<div>
-  <%= link_to "Edit this movie", edit_movie_path(@movie) %> |
-  <%= link_to "Back to movies", movies_path %>
-
-  <%= button_to "Destroy this movie", @movie, method: :delete %>
+  <%= button_to "Borrar esta pelicula", @movie, method: :delete %>
 </div>

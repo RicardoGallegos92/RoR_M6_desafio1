@@ -90,10 +90,6 @@ table>*{
   border: 1px black solid;
 }
 
-table button{
-  background-color: red;
-}
-
 table a{
   appearance: button;
   border: 2px solid black;
@@ -101,4 +97,17 @@ table a{
   background-color: var(--CARD_BG);
   color: var(--TEXT_COLOR);
   text-decoration: none;
+}
+
+input[value="delete"]+button{
+  background-color: red;
+}
+
+#showMovie{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  >*{
+    margin: 5px 0px;
+  }
 }
