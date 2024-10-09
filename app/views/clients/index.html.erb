@@ -1,9 +1,7 @@
 <p style="color: green"><%= notice %></p>
 
 <div class="container">
-  <h1>Clients</h1>
-
-  <%= link_to "New client", new_client_path %>
+  <h1>Clientes</h1>
 
   <div id="clients">
     <table class="table table-bordered">
@@ -18,7 +16,10 @@
       </thead>
       <tbody>
         <% @clients.each do |client| %>
+        <tr>
           <%= render client %>
+          <td><%= link_to "Show this client", client %></td>
+        </tr>
         <% end %>
       </tbody>
     </table>

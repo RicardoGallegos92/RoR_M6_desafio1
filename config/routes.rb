@@ -5,4 +5,6 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "clients#index"
+  # añadimos una redireccion default
+  get "/index", to: "clients#index"
 end

@@ -3,7 +3,11 @@
     <div class="card">
       <div class="card-body">
         <h5 class="card-title"><%= movie.name %></h5>
-        <%= link_to "Show this movie", movie, class: "btn btn-primary" %>
+        <hr>
+        <div>
+          <%= link_to "Buscar Detalles", "https://www.themoviedb.org/search/movie?query=#{movie.name}", class: "btn btn-primary", target: "_blank" %>
+          <%= link_to "Show this movie", movie, class: "btn btn-primary" %>
+        </div>
       </div>
     </div>
   </div>
