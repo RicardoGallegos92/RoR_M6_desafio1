@@ -31,10 +31,6 @@
   font-weight: bolder;
 }
 
-#navbarSupportedContent{
-
-}
-
 .navbar-light{
   background-color: var(--MENU) !important;
 }
@@ -103,6 +99,7 @@ h1,h2{
 /* body */
 body{
   background-color: var(--BG_COLOR);
+  padding-bottom: 25px ;
 }
 
 th,td{
@@ -134,4 +131,12 @@ input[value="delete"]+button{
   >*{
     margin: 5px 0px;
   }
+}
+
+#footer{
+  text-align: center;
+  position: sticky;
+  padding: 5px;
+  right: 15px;
+  bottom: -55px;
 }

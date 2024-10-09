@@ -6,7 +6,7 @@
         <hr>
         <div>
           <%= link_to "Mostrar Pelicula", movie, class: "btn btn-primary" %>
-          <%= link_to "Buscar Detalles", "https://www.themoviedb.org/search/movie?query=#{movie.name}", class: "btn btn-primary", target: "_blank" %>
+          <%= link_to "Editar pelicula", edit_movie_path(movie), class: "btn btn-primary"  %>
         </div>
       </div>
     </div>

@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/dd3e7e5350.js" crossorigin="anonymous"></script>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= stylesheet_link_tag "estilo" %>
@@ -17,6 +19,7 @@
       <%= yield %>
     </div>
   <footer id="footer">
+      <button id="up"><a href="#"><i class="fa-solid fa-angle-up fa-fade"></i></a></button>
   </footer>
   </body>
 </html>

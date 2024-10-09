@@ -2,7 +2,7 @@
 
 <div id="showMovie">
 <%= render @movie %>
-    <%= link_to "Editar pelicula", edit_movie_path(@movie), class: "btn btn-primary"  %>
     <%= link_to "Lista Peliculas", movies_path, class: "btn btn-primary"  %>
+    <%= link_to "Buscar Detalles", "https://www.themoviedb.org/search/movie?query=#{@movie.name}", class: "btn btn-primary", target: "_blank" %>
     <%= button_to "Borrar esta pelicula", @movie, method: :delete %>
 </div>
