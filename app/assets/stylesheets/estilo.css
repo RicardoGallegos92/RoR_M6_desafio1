@@ -6,6 +6,8 @@
   --BG_COLOR:#F3C301;
   --CARD_BG:#FEE3A2;
   --BOTTON_BG:#ADCACB;
+  --TEXT_COLOR:#000;
+
 }
 /* Menu */
 .navbar{
@@ -40,6 +42,15 @@ h1{
 .card{
   text-align: center;
   background-color: var(--CARD_BG);
+  box-shadow: -5px -5px 7px, inset 2px 2px;
+/*  transition: box-shadow 0.3s ease-in-out; */
+  transition: all 0.25s ease-in-out;
+}
+
+.card:hover{
+/*  box-shadow: 5px 5px 7px, inset -2px -2px; */
+  box-shadow: 0 0 10px 5px;
+  scale: 1.01;
 }
 
 .card .btn{
@@ -74,6 +85,20 @@ th,td{
   text-align: center;
 }
 
-table *{
+table>*{
   background-color: rgba(0, 0, 0, 0.05);
+  border: 1px black solid;
+}
+
+table button{
+  background-color: red;
+}
+
+table a{
+  appearance: button;
+  border: 2px solid black;
+  padding: 1px 6px;
+  background-color: var(--CARD_BG);
+  color: var(--TEXT_COLOR);
+  text-decoration: none;
 }

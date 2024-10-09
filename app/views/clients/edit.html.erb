@@ -1,11 +1,12 @@
 <h1>Editar Cliente <%=@client.id%> </h1>
 
-
-<%= render "form", client: @client %>
+<section id="newForm">
+    <%= render "form", client: @client %>
+</section>
 
 <br>
 
-<div>
-  <%= link_to "Show this client", @client %> |
-  <%= link_to "Back to clients", clients_path %>
+<div style="text-align: center">
+  <%= link_to "Mostrar cliente", @client %> |
+  <%= link_to "Volver a lista clientes", clients_path %>
 </div>
